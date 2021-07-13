@@ -1,0 +1,49 @@
+{
+  "name": "phuongna/onesk",
+  "description": "SSO with JWT",
+  "license": "MIT",
+  "keywords": [
+    "onesk"
+  ],
+  "type": "library",
+  "authors": [
+    {
+      "name": "",
+      "email": ""
+    }
+  ],
+  "require": {
+    "php": ">=7.2",
+    "illuminate/support": "^6.0|^7.0|^8.0",
+    "tymon/jwt-auth": "^1.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^4.0|^5.0|^6.0",
+    "phpunit/phpunit": "^8.4|^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "phuongna\\onesk\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "phuongna\\onesk\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "phpunit": "phpunit"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "phuongna\\onesk\\ServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}
