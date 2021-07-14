@@ -2,6 +2,7 @@
   "name": "phuongna/onesk",
   "description": "SSO with JWT",
   "license": "MIT",
+  "version": "1.0.0",
   "keywords": [
     "onesk"
   ],
