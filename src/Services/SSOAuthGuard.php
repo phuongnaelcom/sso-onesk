@@ -10,26 +10,31 @@ class SSOAuthGuard extends JWTGuard
     public function check()
     {
         // TODO: Implement check() method.
+        return ! is_null($this->user());
     }
 
     public function guest()
     {
         // TODO: Implement guest() method.
+        parent::guest();
     }
 
     public function id()
     {
         // TODO: Implement id() method.
+        parent::id();
     }
 
     public function validate(array $credentials = [])
     {
         // TODO: Implement validate() method.
+        parent::validate($credentials);
     }
 
     public function setUser(Authenticatable $user)
     {
         // TODO: Implement setUser() method.
+        parent::setUser($user);
     }
 
     /**
